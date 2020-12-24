@@ -1,0 +1,27 @@
+------Life Cyle Methods 
+
+
+--  when u run a class component --
+few methods get called internally 
+
+Phases of Class Component lifecycle
+
+Mounting  - the html gets attached to the DOM 
+   constructor()
+   static getDerivedStateFromProps()
+   render()
+   componentDidMount()
+
+
+Updating  - when we update the component 
+    static getDerivedStateFromProps()
+    shouldComponentUpdate() (avoid unnecessary updation DOM)
+    getSnapShotBeforeUpdate()
+    render()
+    componentDidUpdate()
+
+Unmounting
+   -- componentWillUnMount
+Error Handling 
+    --  static getDerivedStateFromError()
+    -- componentDidCatch()
